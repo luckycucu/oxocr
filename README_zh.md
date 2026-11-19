@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/images/logo.svg" alt="Logo" width="400" height="400" />  
+  <img src="docs/images/logo.svg" alt="Logo" width="400" />
   <p>
     <a href="#许可证"><img src="https://img.shields.io/badge/License-MIT-blue.svg?logo=opensourceinitiative&logoColor=white" alt="License" /></a>
     <img src="https://img.shields.io/badge/Python-3.10+-FFD43B.svg?logo=python&logoColor=3776AB" alt="Python" />
