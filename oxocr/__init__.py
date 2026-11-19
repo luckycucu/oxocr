@@ -1,0 +1,135 @@
+"""oxocr：模型无关的 Python OCR 包。
+
+公共门面。导入本包不触发 onnxruntime / 常驻池创建（首次使用才惰性加载）。
+"""
+from __future__ import annotations
+
+from oxocr.config import (
+    Backend,
+    InferOptions,
+    LayoutMode,
+    ModelOptions,
+    OcrConfig,
+    OutputFormat,
+    PostprocessConfig,
+    PreprocessConfig,
+    SubprocessOptions,
+)
+from oxocr.errors import (
+    ChecksumMismatchError,
+    InferenceError,
+    InvalidImageError,
+    MissingDependencyError,
+    ModelDownloadError,
+    ModelFileMissingError,
+    ModelNotFoundError,
+    OxocrError,
+    PluginNotFoundError,
+    StageError,
+    SubprocessError,
+    SubprocessTimeoutError,
+    UnknownParameterError,
+)
+from oxocr.facade import (
+    OcrEngine,
+    download_model,
+    get_model_spec,
+    list_models,
+    load_model,
+    loaded_models,
+    ocr,
+    readtext,
+    register_model_impl,
+    register_spec,
+    unload_all,
+    unload_model,
+)
+from oxocr.models.base import (
+    Capabilities,
+    InferRequest,
+    ModelFile,
+    ModelInfo,
+    ModelOutput,
+    ModelSpec,
+    OcrModel,
+)
+from oxocr.types import (
+    Box,
+    CharBox,
+    DebugInfo,
+    Document,
+    Elapse,
+    LoadedModelInfo,
+    OcrResult,
+    StageLog,
+    TextBlock,
+    TextItem,
+    TextLine,
+    ThemeResult,
+    ThemeType,
+)
+
+__version__ = "0.1.1"
+
+__all__ = [
+    "__version__",
+    # 门面
+    "ocr",
+    "readtext",
+    "OcrEngine",
+    "list_models",
+    "get_model_spec",
+    "download_model",
+    "load_model",
+    "unload_model",
+    "unload_all",
+    "loaded_models",
+    "LoadedModelInfo",
+    "register_spec",
+    "register_model_impl",
+    # 数据类型
+    "Box",
+    "CharBox",
+    "TextItem",
+    "TextLine",
+    "TextBlock",
+    "Document",
+    "OcrResult",
+    "Elapse",
+    "DebugInfo",
+    "StageLog",
+    "ThemeType",
+    "ThemeResult",
+    # 模型契约
+    "OcrModel",
+    "ModelSpec",
+    "ModelFile",
+    "ModelInfo",
+    "Capabilities",
+    "InferRequest",
+    "ModelOutput",
+    # 配置
+    "OcrConfig",
+    "ModelOptions",
+    "InferOptions",
+    "PreprocessConfig",
+    "PostprocessConfig",
+    "SubprocessOptions",
+    "LayoutMode",
+    "OutputFormat",
+    "Backend",
+    # 异常
+    "OxocrError",
+    "ModelNotFoundError",
+    "ModelFileMissingError",
+    "ModelDownloadError",
+    "ChecksumMismatchError",
+    "MissingDependencyError",
+    "InvalidImageError",
+    "UnknownParameterError",
+    "InferenceError",
+    "SubprocessError",
+    "SubprocessTimeoutError",
+    "StageError",
+    "PluginNotFoundError",
+]

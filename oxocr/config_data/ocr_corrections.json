@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "wrong": "矣键参数",
+      "right": "关键参数",
+      "regex": false
+    }
+  ]
+}

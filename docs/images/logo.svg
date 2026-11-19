@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 110" width="320" height="110" role="img" aria-label="oxocr logo">
+  <text x="24" y="80"
+        font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="72" font-weight="800" font-style="italic" letter-spacing="-1">
+    <tspan fill="#1E293B">o</tspan><tspan fill="#F97316">x</tspan><tspan fill="#1E293B">ocr</tspan>
+  </text>
+</svg>
